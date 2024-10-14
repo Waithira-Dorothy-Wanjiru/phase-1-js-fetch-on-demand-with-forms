@@ -1,5 +1,16 @@
 const init = () => {
+   
+    console.log("DOM fully loaded and parsed");
   
-}
-
-document.addEventListener('DOMContentLoaded', init);
+    
+    const button = document.getElementById("myButton");
+    if (button) {
+      button.addEventListener("click", () => {
+        alert("Button clicked!");
+      });
+    }
+  }
+  
+ 
+  document.addEventListener('DOMContentLoaded', init);
+  
